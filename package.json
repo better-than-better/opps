@@ -1,0 +1,21 @@
+{
+  "name": "opps",
+  "version": "0.0.1",
+  "description": "create a web application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "hxtao",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "inquirer": "^6.4.1",
+    "ora": "^3.4.0",
+    "validate-npm-package-name": "^3.0.0"
+  }
+}

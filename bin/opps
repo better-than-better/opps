@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+const program = require('commander');
+const create = require('../scripts/create');
+const pkg = require('../package.json');
+
+
+program.command('create <dir>')
+  .option('-l, --library <name>', 'to specify library')
+  .option('-d, --demo', 'a simple demo')
+  .action((dir, cmd) => {
+    create(dir, cmd.library, cmd.demo);
+  });
+
+program.version(pkg.version);
+
+program.parse(process.argv);
+
+program.usage('<command> [options]');
+
+if (!program.args.length) {
+  program.help();
+}
