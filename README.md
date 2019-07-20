@@ -56,3 +56,7 @@ $ opps create vue-demo -l vue
 - sw module
 - test module
 - eslint module
+
+## License
+
+MIT
